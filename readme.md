@@ -1,10 +1,10 @@
 # Web of Things Framework for Go
 
-This is an experimental implementation of the Web of Things Framework written in the Go programming language. It includes a combined HTTP and Web Sockets server, as well as a web page library for demoing access to "things" from within web page scripts. This project is a sister of the [NodeJS server for the Web of Things](https://github.com/w3c/web-of-things-framework). The name refers to the Greek nymph associated with swiftness.
+This will be an experimental implementation of the Web of Things Framework written in the Go programming language. This project is a sister of the [NodeJS server for the Web of Things](https://github.com/w3c/web-of-things-framework). The name refers to the Greek nymph associated with swiftness.
 
 A hundred billion IoT devices are expected to be deployed over the next ten years. There are many IoT platforms, and an increasing number of IoT technologies. However, the IoT products are currently beset by silos and a lack of interoperability, which blocks the benefits of the network effect from taking hold.  At W3C, we are exploring the potential for bridging IoT platforms and devices through the World Wide Web via a new class of Web servers that are connected through a common framework, and available in a variety of scales from microcontrollers, to smart phones and home/office hubs, and cloud-based server farms.
 
-This framework involves virtual objects ("things") as proxies for physical and abstract entities. These things are modelled in terms of metadata, events, properties and actions, with bindings to scripting APIs and a variety of protocols, since no one protocol will fulfil all needs. 
+This framework involves virtual objects ("things") as proxies for physical and abstract entities. These things are modelled in terms of metadata, events, properties and actions, with bindings to scripting APIs and a variety of protocols, since no one protocol will fulfil all needs. This server will eventually support bindings to HTTP, WebSockets, CoAP, MQTT, XMPP and AMQP.
 
 ## Technical Recap.
 
@@ -26,7 +26,7 @@ You can have chains of proxies across different servers, which can range from mi
 
 We welcome contributions. If you find a bug in the source code or a mistake in the documentation, you can help us by submitting an issue to our [GitHub repository](https://github.com/w3c/thoosa), and likewise if you have suggestions for new features. Even better you can submit a Pull Request with a fix. We also have a Gitter chat channel, see above link.
 
-We encourage you to join the W3C [Web of Things Community Group](http://www.w3.org/WoT/IG/) where contribution and discussions happen. Anyone can join and there are no fees.
+We encourage you to join the W3C [Web of Things Community Group](https://www.w3.org/community/wot/) where contribution and discussions happen. Anyone can join and there are no fees.
 
 The amount of time you contribute and the areas in which you contribute is up to you. 
 
