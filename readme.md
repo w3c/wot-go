@@ -1,6 +1,6 @@
 # Web of Things Framework for Go
 
-This will be an experimental implementation of the Web of Things Framework written in the Go programming language. This project is a sister of the [NodeJS server for the Web of Things](https://github.com/w3c/web-of-things-framework). The name refers to the Greek nymph associated with swiftness.
+This will be an experimental implementation of the Web of Things Framework written in the Go programming language. This project is a sister of the [NodeJS server for the Web of Things](https://github.com/w3c/web-of-things-framework).
 
 A hundred billion IoT devices are expected to be deployed over the next ten years. There are many IoT platforms, and an increasing number of IoT technologies. However, the IoT products are currently beset by silos and a lack of interoperability, which blocks the benefits of the network effect from taking hold.  At W3C, we are exploring the potential for bridging IoT platforms and devices through the World Wide Web via a new class of Web servers that are connected through a common framework, and available in a variety of scales from microcontrollers, to smart phones and home/office hubs, and cloud-based server farms.
 
@@ -11,6 +11,8 @@ This framework involves virtual objects ("things") as proxies for physical and a
 The Web of Things starts with URIs for “thing” descriptions as Linked Data expressed in JSON-LD. Things are modelled in terms of their events, properties and actions. Scripts use this URI to ask the server to create a local proxy object in the script’s execution space for the designated thing. The server takes care of the protocol details, and can use which protocol best suits its needs, e.g. HTTP, WebSockets, CoAP, MQTT, XMPP or AMQP.  The thing metadata and the target server metadata enable the server hosting the proxy to figure out which protocol to use for the messaging between the proxy and the thing it proxies.
 
 You can have chains of proxies across different servers, which can range from microcontrollers to cloud-based server farms. Whilst REST based messages are used, the URI paths are really a matter for each server (just as in HTTP).  Discovery involves a range of techniques: mDNS and UPnP on local networks, Bluetooth and BLE beacons, NFC, barcodes, cloud based device registries, social networks of people and things, and by following links between things from the dependencies stated in their descriptions. Servers may also expose a list of the things they host. Privacy will be based upon access control, and terms & conditions that enable data owners to control who can access their data and for what purpose.
+
+The [Go programming language](https://golang.org) is a good choice for high performance servers on powerful platforms, and offers a very clean approach to concurrent programming.
 
 ## Prerequisites
 
