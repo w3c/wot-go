@@ -1,0 +1,11 @@
+wot-go
+
+*.exe
+*.swp
+*.log
+*.bak
+*.tmp
+*.out
+
+.DS_Store
+.Apple*
